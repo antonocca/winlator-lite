@@ -2,11 +2,11 @@
 	<img src="lite.png" width="376" height="128" alt="logo" />  
 </p>
 
-# Winlator@omod-lite
-Winlator@omod-lite is an Android application that lets you to run Windows (x86_64) applications with Wine and Box86/Box64.
+# Winlator@Tiny-lite
+Winlator@Tiny-lite is an Android application that lets you to run Windows (x86_64) applications with Wine and Box86/Box64.
 
 # Installation
-1. Download and install the APK from [GitHub Releases](https://github.com/omiicoidisu/winlator-lite/releases)
+1. Download and install the APK from [GitHub Releases](https://github.com/antonocca/winlator-lite/releases)
 2. Launch the app and wait for the installation process to finish
 
 ----
