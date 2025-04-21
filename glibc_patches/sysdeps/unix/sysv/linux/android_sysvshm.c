@@ -1,4 +1,8 @@
+#include "android_sysvshm.h"
 
+#define REQUEST_CODE_SHMGET 0
+#define REQUEST_CODE_GET_FD 1
+#define REQUEST_CODE_DELETE 2
 
 /* start */
 
