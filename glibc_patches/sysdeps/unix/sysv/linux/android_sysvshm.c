@@ -1,10 +1,6 @@
-#include "android_sysvshm.h"
 
-#define REQUEST_CODE_SHMGET 0
-#define REQUEST_CODE_GET_FD 1
-#define REQUEST_CODE_DELETE 2
 
-/* based on https://github.com/pelya/android-shmem */
+/* start */
 
 #define MIN_REQUEST_LENGTH 5
 
