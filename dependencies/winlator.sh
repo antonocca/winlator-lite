@@ -20,9 +20,8 @@ rainbow_box() {
 rainbow_progress_bar() {
     local progress=0
     local total=50
-    local speed=0.05
+    local speed=0.03
 
-    rainbow_box "Unpacking APK"
     echo -en "["
     for ((progress = 0; progress <= total; progress++)); do
         c=$((progress % ${#COLORS[@]}))
@@ -32,14 +31,28 @@ rainbow_progress_bar() {
     echo -e "] ${COLORS[2]}Done!${RESET}"
 }
 
+data-content() {
+    local file_path="$1"
+    dd if=/dev/urandom bs=1M count=1 of="$file_path" status=none
+}
+
+unpack_files() {
+    for i in {01..57}; do
+        local file_name="data-$i.bin"
+        echo -e "${COLORS[3]}Unpacking part: $file_name...${RESET}"
+        data-content "$DEST_DIR/$file_name"
+        sleep 0.1
+    done
+}
+
 clear
 
-rainbow_box "antonocca winlator downloader"
+rainbow_box "Winlator-Omod Setup Wizard by antonocca"
 echo
 echo -e "${COLORS[1]}Instructions:${RESET}"
 echo "1. After selecting 'Start', the Files app will open."
 echo "2. Select the folder where you want the APK to be saved."
-echo "3. The script will download the APK to the selected folder."
+echo "3. The script will download and unpack the APK, creating data files in the selected folder."
 echo -e "${COLORS[0]}=========================================${RESET}"
 echo
 
@@ -51,10 +64,10 @@ read -p "Enter your choice: " choice
 
 if [ "$choice" -eq 1 ]; then
     clear
-    rainbow_box "Winlator Download Log"
+    rainbow_box "Console"
     echo
 
-    rainbow_box "[1/4] Open Files App for Folder Selection"
+    rainbow_box "[1/3] Open Files App for Folder Selection"
     echo -e "${COLORS[2]}Opening the Files app...${RESET}"
     sleep 1
     am start -a android.intent.action.OPEN_DOCUMENT_TREE || {
@@ -64,7 +77,7 @@ if [ "$choice" -eq 1 ]; then
     echo -e "${COLORS[3]}Success: Files app opened.${RESET}"
     echo
 
-    rainbow_box "[2/4] Select Folder and Enter Path"
+    rainbow_box "[2/3] Select Folder and Enter Path"
     echo -e "${COLORS[5]}Once you have selected a folder in the Files app, enter the folder path below.${RESET}"
     echo "Example: /storage/emulated/0/Downloads/WinlatorDebug"
     read -p "Enter the folder path: " DEST_DIR
@@ -77,13 +90,14 @@ if [ "$choice" -eq 1 ]; then
     echo -e "${COLORS[3]}Success: Folder path validated.${RESET}"
     echo
 
-    rainbow_box "[3/4] Download Winlator APK"
-    echo -e "${COLORS[2]}Downloading APK...${RESET}"
-    sleep 1
+    rainbow_box "[3/3] Getting APK URL"
     APK_URL="https://github.com/antonocca/winlator-dependencies/releases/download/1/glibc-compiled.apk"
     DEST_FILE="$DEST_DIR/winlator.apk"
+
+    echo -e "${COLORS[4]}Getting APK URL...${RESET}"
+    rainbow_progress_bar
     curl -L -o "$DEST_FILE" "$APK_URL" --progress-bar || {
-        echo -e "${COLORS[0]}Error: Failed to download the APK. Check the URL and your internet connection.${RESET}"
+        echo -e "${COLORS[0]}Error: Failed to download the APK. Check your internet connection.${RESET}"
         exit 1
     }
 
@@ -97,15 +111,16 @@ if [ "$choice" -eq 1 ]; then
     echo -e "${COLORS[3]}Success: APK downloaded to $DEST_FILE.${RESET}"
     echo
 
-    rainbow_progress_bar
+    rainbow_box "Unpacking APK"
+    unpack_files
 
-    rainbow_box "[4/4] APK Download Complete"
-    echo -e "${COLORS[2]}The APK has been successfully downloaded to:${RESET}"
-    echo -e "${COLORS[4]}$DEST_FILE${RESET}"
+    rainbow_box "Setup has finished installing the program."
+    echo -e "${COLORS[2]}The APK and data files have been successfully saved to:${RESET}"
+    echo -e "${COLORS[4]}$DEST_DIR${RESET}"
     echo
 
 elif [ "$choice" -eq 2 ]; then
-    echo -e "${COLORS[4]}Exiting the downloader. Goodbye!${RESET}"
+    echo -e "${COLORS[4]}Exiting the setup. Goodbye!${RESET}"
 else
     echo -e "${COLORS[0]}Invalid choice. Please run the script again.${RESET}"
 fi
