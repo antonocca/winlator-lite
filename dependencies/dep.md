@@ -16,7 +16,7 @@
 ### 4) Allow Storage permissions
 **After running the command, allow the storage permissions to the script.**
 
-### 5) Type Install.
+### 5) Start Installation.
 **Type ```1``` to begin the Installation**
 
 ### 6) Choose the folder you created in the storage
