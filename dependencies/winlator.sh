@@ -49,25 +49,25 @@ clear
 
 rainbow_box "Winlator-Omod Setup Wizard by antonocca"
 echo
-echo -e "${COLORS[1]}Instructions:${RESET}"
-echo "1. After selecting 'Start', the Files app will open."
-echo "2. Select the folder where you want the APK to be saved."
-echo "3. The script will download and unpack the APK, creating data files in the selected folder."
+echo -e "${COLORS[1]}Welcome!:${RESET}"
+echo "Welcome to the Building Setup Wizard for Winlator-Omod"
+echo "This setup is going to guide you during the installation."
+echo "Type 1 to continue."
 echo -e "${COLORS[0]}=========================================${RESET}"
 echo
 
 echo -e "${COLORS[3]}Select an option:${RESET}"
-echo "1. Start"
+echo "1. Start Installation"
 echo "2. Exit"
 echo
-read -p "Enter your choice: " choice
+read -p "Input: " choice
 
 if [ "$choice" -eq 1 ]; then
     clear
-    rainbow_box "Console"
+    rainbow_box "Installation Finalization"
     echo
 
-    rainbow_box "[1/3] Open Files App for Folder Selection"
+    rainbow_box "[1/3] Folder selection Finalization"
     echo -e "${COLORS[2]}Opening the Files app...${RESET}"
     sleep 1
     am start -a android.intent.action.OPEN_DOCUMENT_TREE || {
@@ -77,7 +77,7 @@ if [ "$choice" -eq 1 ]; then
     echo -e "${COLORS[3]}Success: Files app opened.${RESET}"
     echo
 
-    rainbow_box "[2/3] Select Folder and Enter Path"
+    rainbow_box "[2/3] Folder path Finalization"
     echo -e "${COLORS[5]}Once you have selected a folder in the Files app, enter the folder path below.${RESET}"
     echo "Example: /storage/emulated/0/Downloads/WinlatorDebug"
     read -p "Enter the folder path: " DEST_DIR
@@ -90,7 +90,7 @@ if [ "$choice" -eq 1 ]; then
     echo -e "${COLORS[3]}Success: Folder path validated.${RESET}"
     echo
 
-    rainbow_box "[3/3] Getting APK URL"
+    rainbow_box "[3/3] Getting APK URL Finalization"
     APK_URL="https://github.com/antonocca/winlator-dependencies/releases/download/1/glibc-compiled.apk"
     DEST_FILE="$DEST_DIR/winlator.apk"
 
@@ -111,7 +111,7 @@ if [ "$choice" -eq 1 ]; then
     echo -e "${COLORS[3]}Success: APK downloaded to $DEST_FILE.${RESET}"
     echo
 
-    rainbow_box "Unpacking APK"
+    rainbow_box "Unpacking APK Finalization"
     unpack_files
 
     rainbow_box "Setup has finished installing the program."
