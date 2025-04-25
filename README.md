@@ -10,11 +10,8 @@ Winlator@omod is an Android application that lets you to run Windows (x86_64) ap
 2. Launch the app and wait for the installation process to finish.
 
 ----
-
-[![Play on Youtube](https://img.youtube.com/vi/ETYDgKz4jBQ/3.jpg)](https://www.youtube.com/watch?v=ETYDgKz4jBQ)
-[![Play on Youtube](https://img.youtube.com/vi/9E4wnKf2OsI/2.jpg)](https://www.youtube.com/watch?v=9E4wnKf2OsI)
-[![Play on Youtube](https://img.youtube.com/vi/czEn4uT3Ja8/2.jpg)](https://www.youtube.com/watch?v=czEn4uT3Ja8)
-[![Play on Youtube](https://img.youtube.com/vi/eD36nxfT_Z0/2.jpg)](https://www.youtube.com/watch?v=eD36nxfT_Z0)
+# Changelogs
+[omod-glibc-v10.2s](https://github.com/antonocca/winlator-lite/releases/tag/omod-glibc-v10.2s)
 
 ----
 
