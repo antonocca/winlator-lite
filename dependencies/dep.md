@@ -6,7 +6,7 @@
 ### 1) Installing Termux
 **You can install Termux by the previous link.**
 ### 2) Creating a folder
-**Create a folder in your native storage. (you can name it however you want).**
+**Create a folder in your native storage by the script or manually. (you can name it however you want).**
 
 ### 3) Downloading the script
 **In Termux, allow every permission and then paste the following command:**
