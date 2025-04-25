@@ -26,10 +26,13 @@
 **Type your folder path.**
 
 **Ex: storage/emulated/0/WinlatorLol**
+
 ### 8) Wait for the file to be downloaded
 **Just have patience!**
 
 ### 9) Type yes or no
 **Type yes if you want to install the apk directly from Termux or type no if you dont want to install the apk from Termux.**
+
 ----------
+
 # Choosing no at the last step is recommended as it doesnt always work. If it gives you an error, dont worry. Just open the folder in an external file manager.
