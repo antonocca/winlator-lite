@@ -4,7 +4,7 @@
 
 ## Installation Guide
 ### 1) Installing Termux
-**You can install Termux by this [link]**(https://f-droid.org/repo/com.termux_1001.apk)
+**You can install Termux by the previous link.**
 ### 2) Creating a folder
 **Create a folder in your native storage. (you can name it however you want).**
 
