@@ -1,4 +1,4 @@
-# Winlator@Omod Installation Documentation
+# Winlator@Omod Building Documentation
 ## Requirements
 - [Latest Termux (currently 0.118.0)](https://f-droid.org/repo/com.termux_1001.apk)
 
@@ -36,3 +36,7 @@
 ----------
 
 # Choosing no at the last step is recommended as it doesnt always work. If it gives you an error, dont worry. Just open the folder in an external file manager.
+
+----
+
+# You can only delete the data.bin files AFTER THE SYSTEM FILES FROM WINLATOR HAVE BEEN INSTALLED.
