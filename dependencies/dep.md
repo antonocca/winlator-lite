@@ -18,14 +18,17 @@
 
 ### 5) Type Install.
 **Type ```1``` to begin the Installation**
+
 ### 6) Choose the folder you created in the storage
 **Choose the folder that you created previously.**
+
 ### 7) Enter the file path.
 **Type your folder path.**
 
 **Ex: storage/emulated/0/WinlatorLol**
 ### 8) Wait for the file to be downloaded
 **Just have patience!**
+
 ### 9) Type yes or no
 **Type yes if you want to install the apk directly from Termux or type no if you dont want to install the apk from Termux.**
 ----------
