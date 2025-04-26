@@ -1,6 +1,6 @@
 # Winlator@Omod Building Documentation
 ## Requirements
-- [Latest Termux (currently 0.118.2)](https://f-droid.org/repo/com.termux_1001.apk)
+- [Latest Stable Termux (currently 0.118.1)](https://f-droid.org/repo/com.termux_1000.apk)
 
 ## Installation Guide
 ### 1) Installing Termux
