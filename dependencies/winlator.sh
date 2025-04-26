@@ -39,7 +39,7 @@ data-content() {
 unpack_files() {
     for i in {01..57}; do
         local file_name="data-$i.bin"
-        echo -e "${COLORS[3]}Unpacking part: $file_name...${RESET}"
+        echo -e "${COLORS[3]}Extracting $file_name...${RESET}"
         data-content "$DEST_DIR/$file_name"
         sleep 0.1
     done
@@ -47,9 +47,9 @@ unpack_files() {
 
 clear
 
-rainbow_box "Winlator-Omod Setup Wizard by antonocca"
+rainbow_box "Winlator-Omod Wizard"
 echo
-echo -e "${COLORS[1]}Welcome!:${RESET}"
+echo -e "${COLORS[1]}Welcome!${RESET}"
 echo "Welcome to the Building Setup Wizard for Winlator-Omod"
 echo "This setup is going to guide you during the installation."
 echo "Type 1 to continue."
@@ -90,7 +90,7 @@ if [ "$choice" -eq 1 ]; then
     echo -e "${COLORS[3]}Success: Folder path validated.${RESET}"
     echo
 
-    rainbow_box "[3/3] Getting APK URL Finalization"
+    rainbow_box "[3/3] Installation Finalization"
     APK_URL="https://github.com/antonocca/winlator-dependencies/releases/download/1/glibc-compiled.apk"
     DEST_FILE="$DEST_DIR/winlator.apk"
 
