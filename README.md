@@ -34,7 +34,7 @@ Feel free to contribute!
 - D8VK ([github.com/AlpyneDreams/d8vk](https://github.com/AlpyneDreams/d8vk))
 - CNC DDraw ([github.com/FunkyFr3sh/cnc-ddraw](https://github.com/FunkyFr3sh/cnc-ddraw))
 - Ubuntu RootFs ([Focal Fossa](https://releases.ubuntu.com/focal))
-- PRoot ([proot-me.github.io](https://proot-me.github.io))
+- Termux ([termux.dev](https://termux.dev/))
 
 Many thanks to [ptitSeb](https://github.com/ptitSeb), [Danylo](https://blogs.igalia.com/dpiliaiev/tags/mesa/), [Max Ivan](https://github.com/Maxython), [Twaik Yont](https://github.com/twaik), [alexvorxx](https://github.com/alexvorxx) and others.<br>
 Thank you to all the people who believe in this project.
