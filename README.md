@@ -2,16 +2,14 @@
 	<img src="omod.png" width="376" height="128" alt="logo" />  
 </p>
 
-# Winlator@omod
-Winlator@omod is an Android application that lets you to run Windows (x86_64) applications with Wine and Box86/Box64.
-
-Feel free to contribute!
-
 [Building Documentation](https://github.com/antonocca/winlator-lite/blob/master/dependencies/dep.md)
+
+`Winlator@Omod` is an Android application that lets you to run Windows (x86_64) applications with Wine and Box86/Box64.
 
 ----
 # Changelogs
-[omod-glibc-v10.2s](https://github.com/antonocca/winlator-lite/releases/tag/omod-glibc-v10.2s)
+
+[glibc-v10.2s](https://github.com/antonocca/winlator-lite/releases/tag/omod-glibc-v10.2s)
 
 ----
 
