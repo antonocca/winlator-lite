@@ -1,4 +1,4 @@
-turnip-25.1.0.tzs
+turnip-25.1.0.tzst
 turnip-25.0.8.tzst
 turnip-25.0.7.tzst
 turnip-25.0.6.tzst
