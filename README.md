@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="liteli.png" width="376" height="128" alt="logo" />  
+	<img src="omod.png" width="376" height="128" alt="logo" />  
 </p>
 
 # Winlator@omod
