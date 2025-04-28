@@ -2,11 +2,24 @@
 	<img src="omod.png" width="376" height="128" alt="logo" />  
 </p>
 
+`Winlator@Omod` is an Android application used to run Windows applications and on Android smartphones.
+
+It uses a customized build of Wine compiled for Android and Box64 to run in the best possible way
+
 [Building Documentation](https://github.com/antonocca/winlator-lite/blob/master/dependencies/dep.md)
 
-`Winlator@Omod` is an Android application that lets you to run Windows (x86_64) applications with Wine and Box86/Box64.
+----
+
+# Compatible GPUs
+
+| GPU        | Support               | Driver                      |
+|------------|-----------------------|-----------------------------|
+| Adreno     | Supported             | Turnip/Vortek/VirGL          |
+| Xclipse    | Supported             | Vortek/VirGL                 |
+| Mali       | Supported             | Vortek/VirGL                 |
 
 ----
+
 # Changelogs
 
 [glibc-v10.2s](https://github.com/antonocca/winlator-lite/releases/tag/omod-glibc-v10.2s)
@@ -15,26 +28,9 @@
 
 ----
 
-# Useful Tips
+# [Useful Tips](https://github.com/antonocca/winlator-lite/blob/master/tips.md)
 
-- If you are experiencing performance issues, try changing the Box64 preset to `Performance` in Container Settings -> Advanced Tab.
-- For applications that use .NET Framework, try installing `Wine Mono` found in Start Menu -> System Tools -> Installers.
-- If some older games don't open, try adding the environment variable `MESA_EXTENSION_MAX_YEAR=2003` in Container Settings -> Environment Variables.
-- Try running the games using the shortcut on the Winlator home screen, there you can define individual settings for each game.
-- To display low resolution games correctly, try to enabling the `Force Fullscreen` option in the shortcut settings.
-- To improve stability in games that uses Unity Engine, try changing the Box64 preset to `Stability` or in the shortcut settings add the exec argument `-force-gfx-direct`.
+# [Credits and Third-Party apps](https://github.com/antonocca/winlator-lite/blob/master/credits.md)
 
-# Credits and Third-party apps
-- GLIBC Patches by [Termux Pacman](https://github.com/termux-pacman/glibc-packages)
-- Wine ([winehq.org](https://www.winehq.org/))
-- Box86/Box64 by [ptitseb](https://github.com/ptitSeb)
-- Mesa (Turnip/Zink/VirGL) ([mesa3d.org](https://www.mesa3d.org))
-- DXVK ([github.com/doitsujin/dxvk](https://github.com/doitsujin/dxvk))
-- VKD3D ([gitlab.winehq.org/wine/vkd3d](https://gitlab.winehq.org/wine/vkd3d))
-- D8VK ([github.com/AlpyneDreams/d8vk](https://github.com/AlpyneDreams/d8vk))
-- CNC DDraw ([github.com/FunkyFr3sh/cnc-ddraw](https://github.com/FunkyFr3sh/cnc-ddraw))
-- Ubuntu RootFs ([Focal Fossa](https://releases.ubuntu.com/focal))
-- Termux ([termux.dev](https://termux.dev/))
+----
 
-Many thanks to [ptitSeb](https://github.com/ptitSeb), [Danylo](https://blogs.igalia.com/dpiliaiev/tags/mesa/), [Max Ivan](https://github.com/Maxython), [Twaik Yont](https://github.com/twaik), [alexvorxx](https://github.com/alexvorxx) and others.<br>
-Thank you to all the people who believe in this project.
