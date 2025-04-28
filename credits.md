@@ -1,0 +1,13 @@
+# Credits and Third-party apps
+- GLIBC Patches by [Termux Pacman](https://github.com/termux-pacman/glibc-packages)
+- Wine ([winehq.org](https://www.winehq.org/))
+- Box86/Box64 by [ptitseb](https://github.com/ptitSeb)
+- Mesa (Turnip/Zink/VirGL) ([mesa3d.org](https://www.mesa3d.org))
+- DXVK ([github.com/doitsujin/dxvk](https://github.com/doitsujin/dxvk))
+- VKD3D ([gitlab.winehq.org/wine/vkd3d](https://gitlab.winehq.org/wine/vkd3d))
+- D8VK ([github.com/AlpyneDreams/d8vk](https://github.com/AlpyneDreams/d8vk))
+- CNC DDraw ([github.com/FunkyFr3sh/cnc-ddraw](https://github.com/FunkyFr3sh/cnc-ddraw))
+- Ubuntu RootFs ([Focal Fossa](https://releases.ubuntu.com/focal))
+- Termux ([termux.dev](https://termux.dev/))
+
+Many thanks to [ptitSeb](https://github.com/ptitSeb), [Danylo](https://blogs.igalia.com/dpiliaiev/tags/mesa/), [Max Ivan](https://github.com/Maxython), [Twaik Yont](https://github.com/twaik), [alexvorxx](https://github.com/alexvorxx) and others.<br>
