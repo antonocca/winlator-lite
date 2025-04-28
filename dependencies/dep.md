@@ -32,7 +32,3 @@
 
 ### 9) Install
 **Install the apk from the folder you selected.**
-
-----
-
-# You can only delete the data.bin files AFTER THE SYSTEM FILES FROM WINLATOR HAVE BEEN INSTALLED.
