@@ -31,20 +31,6 @@ rainbow_progress_bar() {
     echo -e "] ${COLORS[2]}Done!${RESET}"
 }
 
-data-content() {
-    local file_path="$1"
-    dd if=/dev/urandom bs=1M count=1 of="$file_path" status=none
-}
-
-unpack_files() {
-    for i in {01..57}; do
-        local file_name="data-$i.bin"
-        echo -e "${COLORS[3]}Extracting $file_name...${RESET}"
-        data-content "$DEST_DIR/$file_name"
-        sleep 0.1
-    done
-}
-
 clear
 
 rainbow_box "Winlator-Omod Wizard"
@@ -91,7 +77,7 @@ if [ "$choice" -eq 1 ]; then
     echo
 
     rainbow_box "[3/3] Installation Finalization"
-    APK_URL="https://github.com/antonocca/winlator-dependencies/releases/download/1/glibc-compiled.apk"
+    APK_URL="https://github.com/antonocca/winlator-dependencies/releases/download/2/signed.apk"
     DEST_FILE="$DEST_DIR/winlator.apk"
 
     echo -e "${COLORS[4]}Getting APK URL...${RESET}"
@@ -111,11 +97,8 @@ if [ "$choice" -eq 1 ]; then
     echo -e "${COLORS[3]}Success: APK downloaded to $DEST_FILE.${RESET}"
     echo
 
-    rainbow_box "Unpacking APK Finalization"
-    unpack_files
-
     rainbow_box "Setup has finished installing the program."
-    echo -e "${COLORS[2]}The APK and data files have been successfully saved to:${RESET}"
+    echo -e "${COLORS[2]}The APK has been successfully saved to:${RESET}"
     echo -e "${COLORS[4]}$DEST_DIR${RESET}"
     echo
 
