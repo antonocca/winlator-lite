@@ -11,6 +11,8 @@
 
 [glibc-v10.2s](https://github.com/antonocca/winlator-lite/releases/tag/omod-glibc-v10.2s)
 
+[glibc-v10.3s](https://github.com/antonocca/winlator-lite/releases/tag/omod-glibc-v10.3s)
+
 ----
 
 # Useful Tips
