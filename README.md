@@ -6,6 +6,8 @@
 
 It uses a customized build of Wine compiled for Android and Box64 to run in the best possible way
 
+[Latest Release](https://github.com/antonocca/winlator-lite/releases/latest)
+
 ----
 
 # Compatible GPUs
@@ -15,14 +17,6 @@ It uses a customized build of Wine compiled for Android and Box64 to run in the 
 | Adreno     | Supported             | Turnip/Vortek/VirGL          |
 | Xclipse    | Supported             | Vortek/VirGL                 |
 | Mali       | Supported             | Vortek/VirGL                 |
-
-----
-
-# Changelogs
-
-[glibc-v10.2s](https://github.com/antonocca/winlator-lite/releases/tag/omod-glibc-v10.2s)
-
-[glibc-v10.3s](https://github.com/antonocca/winlator-lite/releases/tag/omod-glibc-v10.3s)
 
 ----
 
