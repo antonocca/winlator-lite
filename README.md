@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/downloads/antonocca/winlator-lite/total" alt="Total Downloads" width="150">
+  <img src="https://img.shields.io/github/downloads/antonocca/winlator-dependencies/total" alt="Total Downloads" width="150">
 	
 `Winlator@Omod` is an Android application used to run Windows applications and on Android smartphones.
 
