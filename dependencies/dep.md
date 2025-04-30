@@ -1,4 +1,8 @@
 # Winlator@Omod Building Documentation
+**The building script is a faster way to automatically download the apk, faster and easier.**
+
+**It Automatically updates every release so you dont need to change links but to just run the download script command**
+
 ## Requirements
 - [Latest Stable Termux (currently 0.118.2)](https://github.com/termux/termux-app/releases/download/v0.118.2/termux-app_v0.118.2+github-debug_universal.apk)
 
