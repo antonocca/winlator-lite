@@ -2,6 +2,10 @@
 	<img src="omod.png" width="376" height="128" alt="logo" />  
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/github/downloads/antonocca/winlator-dependencies/total" alt="Total Downloads" width="150">
+</p>
+
 `Winlator@Omod` is an Android application used to run Windows applications and on Android smartphones.
 
 It uses a customized build of Wine compiled for Android and Box64 to run in the best possible way
