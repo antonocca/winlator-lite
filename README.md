@@ -11,7 +11,7 @@ It uses a customized build of Wine compiled for Android and Box64 to run in the 
 
 Star the repo if it was useful!
 
-[Latest Release](https://github.com/antonocca/winlator-lite/releases/latest)
+[![download](https://img.shields.io/badge/Download-Latest-brightgreen)](https://github.com/antonocca/winlator-lite/releases/latest)
 
 ----
 
